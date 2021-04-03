@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Lembah Rembulan</title>
+    <title>Document</title>
     <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
@@ -54,11 +54,22 @@
         <h1>Selamat datang di Lembah Rembulan</h1>
         <img style="width:70%;" src="asset/headerLine.png" alt="line">
         <br>
-        <button type="button" class="btn btn-warning btn-lg px-4 me-sm-3 my-5 fw-bold">Mulai Tur</button>
+        <a href="tour/tour.html">
+            <button type="button" class="btn btn-warning btn-lg px-4 me-sm-3 my-5 fw-bold">Mulai Tur</button>
+        </a>
     </div>
 
 </body>
 <script src="js/bootstrap.min.js"></script>
-<script src="js/script.js"></script>
+<script>
+    var scene, viewer;
+    scene = new PANOLENS.ImagePanorama('asset/header.jpg');
+    viewer = new PANOLENS.Viewer({
+        controlBar: false,
+        autoRotate: true,
+        autoRotateSpeed: 0.5,
+    });
+    viewer.add(scene);
+</script>
 
 </html>
