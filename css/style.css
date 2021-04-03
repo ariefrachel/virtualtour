@@ -93,5 +93,9 @@ nav {
         position: absolute;
         z-index: 3;
     }
+    
+    .btn {
+        font-size: 18px;
+    }
 
 }
