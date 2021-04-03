@@ -66,6 +66,12 @@ nav {
     background: transparent;
 }
 
+.back .btn {
+    background: transparent;
+    color: #fff;
+    border: none;
+}
+
 .navMobile {
     display: none;
 }
