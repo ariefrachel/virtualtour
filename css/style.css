@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Montserrat';
+    scroll-behavior: smooth;
 }
 
 html,
@@ -46,9 +47,13 @@ nav {
     z-index: 1;
 }*/
 
-h1 {
+.header h1 {
     font-size: 48px;
     color: #fff;
+}
+
+.header h1:nth-child(2) {
+    font-size: 56px;
 }
 
 .btn {
@@ -59,4 +64,34 @@ h1 {
     border-color: #fff;
     color: #fff;
     background: transparent;
+}
+
+.navMobile {
+    display: none;
+}
+
+@media only screen and (max-width: 720px) {
+    .header {
+        top: 55%;
+    }
+
+    .header h1:nth-child(1) {
+        font-size: 28px;
+    }
+
+    .header h1:nth-child(2) {
+        font-size: 32px;
+    }
+
+    .navDesk {
+        display: none;
+    }
+
+    .navMobile {
+        display: block;
+        width: 100%;
+        position: absolute;
+        z-index: 3;
+    }
+
 }
