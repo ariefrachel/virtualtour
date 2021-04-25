@@ -25,18 +25,18 @@ h2 {
 }
 
 .btn-warning {
-    background-color: #0b91a3;
+    background-color: #FF9B25;
     color: #fff;
 }
 
 .btn-warning:hover {
-    color: #0b91a3;
+    color: #FF9B25;
     background-color: #fff;
 }
 
 .btn-warning:active,
 .btn-warning:focus {
-    background-color: #0b91a3;
+    background-color: #FF9B25;
     color: #fff;
 }
 
@@ -86,14 +86,14 @@ h2 {
 }
 
 #kenalan {
-    outline: 2px solid #0b91a3;
+    outline: 2px solid #FF9B25;
     outline-offset: -2px;
     color: #fff;
     background: transparent;
 }
 
 #kenalan:hover {
-    color: #0b91a3;
+    color: #FF9B25;
     background-color: #fff;
     outline: none;
 }
@@ -111,7 +111,7 @@ h2 {
 }
 
 .nav li a:hover {
-    color: #0b91a3;
+    color: #FF9B25;
 }
 
 [data-tab-content] {
