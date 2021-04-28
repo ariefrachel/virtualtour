@@ -120,7 +120,7 @@
                                 <div class="nav nav-tabs" id="nav-tab" role="tablist">
                                     <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab"
                                         data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home"
-                                        aria-selected="true">Bio</button>
+                                        aria-selected="true">Profil</button>
                                     <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab"
                                         data-bs-target="#nav-profile" type="button" role="tab"
                                         aria-controls="nav-profile" aria-selected="false">Sejarah</button>
@@ -133,25 +133,26 @@
                             <div class="tab-content" id="nav-tabContent">
                                 <div class="tab-pane fade show active" id="nav-home" role="tabpanel"
                                     aria-labelledby="nav-home-tab">
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-                                        nostrud
-                                        exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                                    <p>
-                                        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-                                        fugiat
-                                        nulla
-                                        pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
-                                        officia
-                                        deserunt
-                                        mollit anim id est laborum.</p>
+                                    <p>Wisata Lembah Rembulan merupakan wisata alam pegunungan asri dibawah lereng
+                                        Gunung Slamet. Wisata ini menyajikan pemandangan alam yang indah dan jauh dari
+                                        keramaian. Sehingga cocok sekali untuk dijadikan sebagai tempat liburan dan
+                                        menenangkan pikiran.</p>
+                                    <p>Berbagai aktivitas bisa dilakukan pengunjung seperti bersantai, berenang, berburu
+                                        spot foto, camping, dan aktivitas seru lainnya. Wisata Lembah Rembulan juga
+                                        menyediakan fasilitas berupa penginapan yang nyaman untuk pengunjung yang mau
+                                        bermalam disini.</p>
                                 </div>
                                 <div class="tab-pane fade" id="nav-profile" role="tabpanel"
                                     aria-labelledby="nav-profile-tab">
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-                                        nostrud
-                                        exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                                    <p>Berawal dari Program Pemerintah melalui Kementerian Desa, Pembangunan Daerah
+                                        Tertinggal dan Transmigrasi (Kemendes PDTT) berkomitmen untuk menghilangkan
+                                        citra desa yang tertinggal, kumuh, dan dihuni penduduk berpenghasilan rendah
+                                        atau miskin. Oleh karena itu, ada empat program prioritas yang digenjot.</p>
+                                    <p>Salah satunya adalah pembangunan embung yang kemudian dicantumkan oleh pemerintah
+                                        Desa Rembul yang disusun dalam RKPDes pada tahun anggaran 2019
+                                    </p>
+                                    <p>Selain itu juga dibangun Sarana Wisata yang ternyata memiliki potensi luar biasa
+                                        yang akhirnya menjadi cikal bakal terbentuknya Lembah Rembulan</p>
                                 </div>
                                 <div class="tab-pane fade" id="nav-contact" role="tabpanel"
                                     aria-labelledby="nav-contact-tab">
@@ -312,26 +313,22 @@
                     <div style="padding-right:4em" class="form wow fadeInUp col-md-6">
                         <h4>Hubungi Kami</h4>
                         <br>
-                        <form>
+                        <form id="form">
                             <div class="form-group">
-                                <label for="name">Nama Lengkap</label>
-                                <input type="text" class="form-control" id="name" placeholder="Nama Lengkap">
+                                <label for="from_name">Nama Lengkap</label>
+                                <input type="text" name="from_name" class="form-control" id="from_name"
+                                    placeholder="Nama Lengkap">
                             </div><br>
                             <div class="form-group">
-                                <label for="exampleInputEmail1">Email</label>
-                                <input type="email" class="form-control" id="exampleInputEmail1"
-                                    aria-describedby="emailHelp" placeholder="Email">
-                                <!--small id="emailHelp" class="form-text text-muted">We'll never share your email with
-                                    anyone
-                                    else.</small-->
+                                <label for="from_email">Email</label>
+                                <input type="text" name="from_email" class="form-control" id="from_email"
+                                    placeholder="Email">
                             </div><br>
                             <div class="form-group">
-                                <label for="message">Pesan</label><br>
-                                <textarea name="message" id="messages"
-                                    style="width:100%;height:100px;border:1px solid rgba(0,0,0,.2)"
-                                    placeholder="Pesan"></textarea>
-                            </div><br>
-                            <button class="btn btn-warning btn-sm px-4 py-2 fs-6">Kirim Pesan</button>
+                                <label for="message">Pesan</label>
+                                <input type="text" name="message" class="form-control" id="message" placeholder="Pesan">
+                            </div>
+                            <input type="submit" id="button" value="Kirim Pesan">
                         </form>
                     </div>
                     <div style="padding-left:4em" class="contacts wow fadeInUp col-md-6">
@@ -347,7 +344,7 @@
                             </svg>
                             <p style="margin-left:12px;">0838-6142-1792</p>
                         </div>
-                        <div class="contact">
+                        <div style="margin-top:-1.5em;" class="contact">
                             <svg width="20" height="16" viewBox="0 0 20 16" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <path fill-rule="evenodd" clip-rule="evenodd"
@@ -356,7 +353,6 @@
                             </svg>
                             <p style="margin-left:12px;">lembahrembulan@gmail.com</p>
                         </div>
-                        <br>
                         <div class="social">
                             <h5 class="my-3">Sosial Media</h5>
                             <div class="d-flex">
@@ -371,6 +367,13 @@
                                     <img src="assets/images/social/youtube.svg" alt="youtube">
                                 </a>
                             </div>
+                        </div><br><br>
+                        <div class=offer>
+                            <p><span style="opacity:.6;font-weight:600">Tarif dan penawaran dapat dihubungi
+                                    melalui link berikut: </span>
+                                <a href="https://wisata-embung-desa-rembul.business.site/" target="_blank">
+                                    Dapatkan penawaran
+                                </a></p>
                         </div>
                     </div>
                 </div>
@@ -379,11 +382,11 @@
         <iframe style="margin-top:32px;"
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3958.560012676343!2d109.16457711436999!3d-7.176748872420477!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e6f93c4e3e46303%3A0xf2c2d17c504917f0!2sWISATA%20LEMBAH%20REMBULAN%20DESA%20REMBUL!5e0!3m2!1sen!2sid!4v1618300174299!5m2!1sen!2sid"
             width="100%" height="400px" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-        <footer class="px-5">
+        <footer>
             <div class="row">
                 <div class="col-sm-4">
                     <h2>Visit Us</h2>
-                    <p style="width:80%;">Sawah,Ladang,Hutan, Rembul, Bojong, Tegal, Central Java 52465</p>
+                    <p style="width:80%;">Desa Rembul, Bojong, Tegal, Central Java 52465</p>
                     <p>Buka 24 Jam tiap hari</p>
                     <a style="opacity: 1"
                         href=" https://www.google.com/maps/dir//WISATA+LEMBAH+REMBULAN+DESA+REMBUL/data=!4m8!4m7!1m0!1m5!1m1!1s0x2e6f93c4e3e46303:0xf2c2d17c504917f0!2m2!1d109.1667658!2d-7.1767541999999995"
@@ -391,7 +394,7 @@
                         <button class="btn btn-warning btn-sm px-3 fs-6">Lhat Rute</button>
                     </a>
                 </div>
-                <div class="col-sm-3">
+                <div class="col-sm-4">
                     <h2>Lembah Rembulan</h2>
                     <div>
                         <div>
@@ -406,12 +409,9 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-sm-2">
+                <div class="col-sm-4">
                     <h2>Contact</h2>
-                    <a style="opacity:1" href="https://mail.google.com/mail/?view=cm&fs=1&to=someone@example.com&su=Subjek&body=Isi pesan
-                        &bcc=someone.else@example.com" target="_blank">
-                        <button class="btn btn-warning btn-sm px-3 fs-6">Kirim Pesan</button>
-                    </a><br><br>
+
                     <div class="d-flex">
                         <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="phone"
                             class="svg-inline--fa fa-phone fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg"
@@ -421,17 +421,33 @@
                             </path>
                         </svg>
                         <p style="margin-left:12px;">0838-6142-1792</p>
+                    </div><br>
+                    <div style="margin-top:-1.5em;" class="d-flex">
+                        <svg width="20" height="16" viewBox="0 0 20 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M18 0H2C1.25057 0 0.593979 0.417749 0.251583 1.03188C0.363831 1.06104 0.472875 1.11036 0.573462 1.18077L10 7.77934L19.4265 1.18077C19.5271 1.11036 19.6362 1.06104 19.7484 1.03189C19.406 0.41775 18.7494 0 18 0ZM20 3.22066L10.5735 9.81923C10.2291 10.0603 9.77086 10.0603 9.42654 9.81923L0 3.22066V14C0 15.1 0.9 16 2 16H18C19.1 16 20 15.1 20 14V3.22066Z"
+                                fill="#FF9B25" />
+                        </svg>
+                        <p style="margin-left:12px;">lembahrembulan@gmail.com</p>
+                    </div>
+                    <div class="social">
+                        <div class="d-flex">
+                            <a style="opacity:1;" href="#">
+                                <img style="margin-left:inherit" src="assets/images/social/facebook.svg" alt="facebook">
+                            </a>
+                            <a style="opacity:1" href="#">
+                                <img src="assets/images/social/instagram.svg" alt="instagram">
+                            </a>
+                            <a style="opacity:1" href="#">
+                                <img src="assets/images/social/youtube.svg" alt="youtube">
+                            </a>
+                        </div>
                     </div>
                 </div>
-                <div class="col-sm-3">
-                    <h2>Virtual Tour</h2>
-                    <a href="output/index.html">
-                        <button class="btn btn-warning btn-sm px-3 fs-6">Mulai Tur</button>
-                    </a>
-                </div>
+
             </div>
-            <br>
-            <hr style="color:#fff;">
+            <br><br>
+            <hr style="color:#fff;"><br>
             <p style="opacity: .9;letter-spacing: 10px;" class="text-center">Lembah Rembulan</p>
         </footer>
     </div>
@@ -443,6 +459,11 @@
 <script src="js/fontawesome.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script type="text/javascript" src="js/slick.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+
+<script type="text/javascript">
+    emailjs.init('user_XQGKoLRymbzWCfcHbjpGS')
+</script>
 <script src="js/script.js"></script>
 <script src="js/blog.js"></script>
 <script src="js/bootstrap.min.js"></script>

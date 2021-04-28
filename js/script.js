@@ -13,3 +13,25 @@ $(document).ready(function () {
         });
     });
 });
+
+
+const btn = document.getElementById('button');
+
+document.getElementById('form')
+    .addEventListener('submit', function (event) {
+        event.preventDefault();
+
+        btn.value = 'Mengirim...';
+
+        const serviceID = 'default_service';
+        const templateID = 'template_wd9hczf';
+
+        emailjs.sendForm(serviceID, templateID, this)
+            .then(() => {
+                btn.value = 'Kirim Pesan';
+                alert('Pesan telah terkirim!');
+            }, (err) => {
+                btn.value = 'Kirim Pesan';
+                alert(JSON.stringify(err));
+            });
+    });
