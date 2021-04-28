@@ -48,6 +48,8 @@ h2 {
 }
 
 #home {
+    width: 100%;
+    height: 100vh;
     overflow: hidden;
 }
 
@@ -142,7 +144,8 @@ h2 {
     width: 100%;
 }
 
-.galleryTitle a {
+.galleryTitle a,
+.intro a {
     align-content: center;
 }
 
@@ -182,6 +185,293 @@ h2 {
     border-top-right-radius: 5px;
 }
 
+footer {
+    width: 100%;
+    background-color: #333;
+    padding-top: 80px;
+    padding-bottom: 10px;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+footer h2 {
+    font-size: 21px;
+    padding-bottom: 12px;
+    color: #FF9B25;
+}
+
+footer a {
+    text-decoration: none;
+    color: #333;
+    color: #fff;
+    opacity: .7;
+}
+
+
+footer a:hover {
+    color: #FF9B25;
+}
+
+footer p {
+    color: #fff;
+    opacity: .7;
+}
+
+#cursor-btn {
+    position: absolute;
+    cursor: pointer;
+    z-index: 9999;
+    top: 85%;
+    left: 90%;
+    display: none;
+}
+
+#cursor-btn svg {
+    position: fixed;
+    width: 80px;
+}
+
+.scroll-up-btn {
+    position: fixed;
+    height: 45px;
+    width: 38px;
+    background: #FF9B25;
+    right: 30px;
+    bottom: 10px;
+    text-align: center;
+    line-height: 45px;
+    color: #fff;
+    z-index: 9999;
+    font-size: 30px;
+    border-radius: 8px;
+    border-bottom-width: 2px;
+    cursor: pointer;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s ease;
+}
+
+.scroll-up-btn.show {
+    bottom: 30px;
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.scroll-up-btn:hover {
+    opacity: .5;
+}
+
+.arrow {
+    position: relative;
+    margin: auto;
+    width: 5%;
+    top: 8.5em;
+    animation: scroll-arrow 1s ease-in-out infinite;
+}
+
+.arrow img {
+    cursor: pointer;
+}
+
+.rutenav {
+    margin-left: 21px;
+    color: #FF9B25;
+    background: none;
+}
+
+.rutenav:hover {
+    border: 1px solid #FF9B25;
+}
+
+@keyframes scroll-arrow {
+    0% {
+        transform: translateY(-5px);
+    }
+
+    25% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(5px);
+    }
+
+    75% {
+        transform: translateY(0);
+    }
+
+    100% {
+        transform: translateY(-5px);
+    }
+}
+
+.seeall a {
+    color: #0b91a3;
+    text-decoration: none;
+}
+
+.seeall a:hover {
+    color: #FF9B25;
+}
+
+.testimonials-clean {
+    color: #313437;
+    background: #f5f6f8;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    padding-bottom: 2em;
+    padding-top: 1em;
+}
+
+.testimonials-clean p {
+    color: #7d8285;
+}
+
+.testimonials-clean h2 {
+    font-weight: bold;
+    margin-bottom: 40px;
+    padding-top: 40px;
+    color: inherit;
+}
+
+@media (max-width:767px) {
+    .testimonials-clean h2 {
+        margin-bottom: 25px;
+        padding-top: 25px;
+        font-size: 24px;
+    }
+}
+
+.testimonials-clean .intro {
+    font-size: 16px;
+    margin: 0 auto;
+}
+
+.testimonials-clean .intro p {
+    margin-bottom: 0;
+}
+
+.testimonials-clean .people {
+    padding: 20px 0 20px;
+}
+
+.testimonials-clean .item {
+    margin-bottom: 32px;
+}
+
+@media (min-width:768px) {
+    .testimonials-clean .item {
+        height: 220px;
+    }
+}
+
+.testimonials-clean .item .box {
+    padding: 30px;
+
+    background-color: #fff;
+    position: relative;
+    box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.1);
+}
+
+.testimonials-clean .item .box:after {
+    content: '';
+    position: absolute;
+    left: 30px;
+    bottom: -24px;
+    width: 0;
+    height: 0;
+    border: 15px solid transparent;
+    border-width: 12px 15px;
+    border-top-color: #fff;
+}
+
+.testimonials-clean .item .author {
+    margin-top: 28px;
+    padding-left: 25px;
+}
+
+.testimonials-clean .item .name {
+    font-weight: bold;
+    margin-bottom: 2px;
+    color: inherit;
+}
+
+.testimonials-clean .item .title {
+    font-size: 13px;
+    color: #9da9ae;
+}
+
+.testimonials-clean .item .description {
+    font-size: 15px;
+    margin-bottom: 0;
+}
+
+.testimonials-clean .item img {
+    max-width: 40px;
+    float: left;
+    margin-right: 12px;
+    margin-top: -5px;
+}
+
+hr {
+    width: 70%;
+    margin: auto;
+}
+
+#contact {
+    margin-top: 4em;
+    margin-bottom: 4em;
+}
+
+#contact .container {
+    padding-left: 2%;
+    padding-right: 2%;
+}
+
+#contact h4 {
+    font-family: 'Playfair Display';
+    font-weight: bold;
+}
+
+.contact {
+    display: flex;
+    place-items: center;
+}
+
+.contact p {
+    margin-top: 1em;
+}
+
+.form,
+.contacts {
+    background: #f5f6f8;
+    padding: 4em;
+}
+
+.contacts {
+    border: 2em solid #f5f6f8;
+    padding-top: 2em;
+    background: #fff;
+
+}
+
+.navbtn {
+    color: #FF9B25;
+    background: rgba(255, 155, 37, .2);
+}
+
+.social img {
+    width: 32px;
+    height: 32px;
+    margin-left: 1em;
+}
+
+form label {
+    font-size: 14px;
+    font-weight: 600;
+    opacity: .7;
+    margin-top: 6px;
+}
 
 @media only screen and (max-width: 720px) {
     .htext h1 {
@@ -201,4 +491,10 @@ h2 {
     .aboutlist {
         height: 300px;
     }
+
+    .testimonials-clean {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
 }
