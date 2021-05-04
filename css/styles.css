@@ -10,13 +10,19 @@
 }
 
 h1,
-h2 {
+h2,
+h3 {
     font-family: 'Playfair Display';
     font-weight: bold;
 }
 
 h2 {
     font-size: 36px;
+}
+
+p {
+    font-family: 'Roboto';
+    opacity: .8;
 }
 
 .btn {
@@ -79,6 +85,26 @@ h2 {
     border-radius: 15px;
 
     background: #fff;
+}
+
+#tour {
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 2em;
+    padding-bottom: 2em;
+    display: flex;
+    place-items: center;
+    background: #f5f6f8;
+}
+
+#tour .tourText {
+    padding: 2.5em 2em;
+    margin-left: 2em;
+    background: #fff;
+}
+
+.tourText h3 {
+    padding-bottom: .7em;
 }
 
 .htext {
@@ -336,7 +362,7 @@ footer p {
     margin-top: 2em;
     margin-bottom: 2em;
     padding-bottom: 2em;
-    padding-top: 1em;
+    padding-top: 3em;
 }
 
 .testimonials-clean p {
@@ -439,11 +465,6 @@ hr {
     margin-bottom: 4em;
 }
 
-#contact .container {
-    padding-left: 2%;
-    padding-right: 2%;
-}
-
 #contact h4 {
     font-family: 'Playfair Display';
     font-weight: bold;
@@ -502,6 +523,66 @@ hr {
     text-decoration: none;
 }
 
+.review1 {
+    animation-name: flipInX;
+    animation-delay: 0s;
+}
+
+.review2 {
+    animation-name: flipInX;
+    animation-delay: .2s;
+}
+
+.review3 {
+    animation-name: flipInX;
+    animation-delay: .4s
+}
+
+.review4 {
+    animation-name: flipInX;
+    animation-delay: .6s;
+}
+
+.review5 {
+    animation-name: flipInX;
+    animation-delay: .8s;
+}
+
+.review6 {
+    animation-name: flipInX;
+    animation-delay: 1s;
+}
+
+.img1 {
+    animation-name: fadeInUp;
+    animation-delay: 0s;
+}
+
+.img2 {
+    animation-name: fadeInUp;
+    animation-delay: .15s;
+}
+
+.img3 {
+    animation-name: fadeInUp;
+    animation-delay: .3s
+}
+
+.img4 {
+    animation-name: fadeInUp;
+    animation-delay: .45s;
+}
+
+.img5 {
+    animation-name: fadeInUp;
+    animation-delay: .6s;
+}
+
+.img6 {
+    animation-name: fadeInUp;
+    animation-delay: .75s;
+}
+
 form label {
     font-size: 14px;
     font-weight: 600;
@@ -509,7 +590,17 @@ form label {
     margin-top: 6px;
 }
 
-@media only screen and (max-width: 720px) {
+@media only screen and (max-width: 800px) {
+
+    #tour {
+        display: block;
+    }
+
+    #tour .tourText {
+        margin-top: 2em;
+        margin-left: 0em;
+    }
+
     .arrow {
         top: 3em;
     }
