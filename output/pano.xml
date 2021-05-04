@@ -90,7 +90,6 @@
       <hotspot id="Point05" skinid="ht_node" pan="250.02" target="-174.8/29.9/70.0" title="" url="{node9}" description="" tilt="-1.19"/>
       <hotspot id="Point06" skinid="ht_node" pan="289.35" target="15.2/0.0/70.0" title="" url="{node10}" description="" tilt="-2.46"/>
       <hotspot id="Point07" skinid="ht_node" pan="357.4" target="-34.7/0.0/82.8" title="" url="{node1}" description="" tilt="5.32"/>
-      <hotspot id="Point09" skinid="ht_info" pan="-91.54" target="" title="Kolam Renang" url="" description="" tilt="-6.7"/>
       <hotspot id="Point10" skinid="ht_info" pan="-305.21" target="" title="Home Stay" url="" description="" tilt="13.35"/>
       <hotspot id="Point12" skinid="ht_node_3d" pan="-6.06" target="14.6/5.5/62.8" title="" url="{node2}" description="" tilt="-3.08"/>
       <hotspot id="Point13" skinid="ht_node_3d" pan="-138.8" target="-139.7/-11.4/70.0" title="" url="{node7}" description="" tilt="-10.71"/>
@@ -184,7 +183,6 @@
       <hotspot distance="10.1963" id="Point03" skinid="ht_node" pan="-39.4" target="82.4/3.1/62.8" title="" url="{node2}" description="" tilt="3.09"/>
       <hotspot distance="5.79835" id="Point04" skinid="ht_node" pan="-92.29" target="75.7/-6.2/70.0" title="" url="{node10}" description="" tilt="-0.39"/>
       <hotspot distance="13.7596" id="Point05" skinid="ht_node" pan="-17.53" target="14.0/6.6/77.5" title="" url="{node3}" description="" tilt="6.01"/>
-      <hotspot id="Point06" skinid="ht_info" pan="-330.97" target="" title="Kolam Renang" url="" description="" tilt="-5.17"/>
       <hotspot distance="5.79835" id="Point07" skinid="ht_node_3d" pan="-92.37" target="35.1/-2.6/70.0" title="" url="{node10}" description="" tilt="-0.41"/>
       <hotspot distance="11.6217" id="Point08" skinid="ht_node_3d" pan="-289.4" target="-44.8/-0.2/70.0" title="" url="{node8}" description="" tilt="0.15"/>
     </hotspots>
