@@ -38,3 +38,27 @@ img {
     width: 32px;
     height: 32px;
 }
+
+h5 {
+    font-family: 'Roboto';
+}
+
+.container {
+    display: flex;
+}
+
+.guide {
+    width: 350px;
+    display: flex;
+    place-items: center;
+}
+
+.guide p {
+    width: 250px;
+    font-size: 14px;
+    margin-top: -15px;
+}
+
+.guide div {
+    padding-left: 15px;
+}
