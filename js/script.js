@@ -24,14 +24,14 @@ document.getElementById('form')
         btn.value = 'Mengirim...';
 
         const serviceID = 'default_service';
-        const templateID = 'template_wd9hczf';
+        const templateID = 'template_5g6t0ek';
 
         emailjs.sendForm(serviceID, templateID, this)
             .then(() => {
-                btn.value = 'Kirim Pesan';
-                alert('Pesan telah terkirim!');
+                btn.value = 'Send Email';
+                alert('Pesan Telah Terkirim!');
             }, (err) => {
-                btn.value = 'Kirim Pesan';
+                btn.value = 'Send Email';
                 alert(JSON.stringify(err));
             });
     });
