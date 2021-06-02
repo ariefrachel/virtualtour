@@ -1,73 +1,67 @@
 <!DOCTYPE html>
 <html>
-
-<head>
-	<link rel="shortcut icon" type="image/jpg" href="../assets/images/logo/logo.png" />
+	<head>
+			<link rel="shortcut icon" type="image/jpg" href="../assets/images/logo/logo.png" />
 	<link rel="shortcut icon" type="image/x-icon" href="../assets/images/logo/logo.png" />
 	<link href='https://fonts.googleapis.com/css?family=Playfair Display' rel='stylesheet'>
 	<link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
-	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
-	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0" />
-	<meta name="apple-mobile-web-app-capable" content="yes" />
-	<meta name="apple-mobile-web-app-status-bar-style" content="black" />
-	<meta name="mobile-web-app-capable" content="yes" />
-	<link rel="stylesheet" href="../css/bootstrap.min.css">
+		<meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" /> 
+		<title></title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0" />
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+		<meta name="mobile-web-app-capable" content="yes" />
+			<link rel="stylesheet" href="../css/bootstrap.min.css">
 	<script src="../js/bootstrap.min.js"></script>
 	<title>Lembah Rembulan</title>
-	<style type="text/css" title="Default">
-		/* fullscreen */
-		html {
-			height: 100%;
-		}
+		<style type="text/css" title="Default">
+			/* fullscreen */
+			html {
+				height:100%;
+			}
+			body {
+				height:100%;
+				margin: 0px;
+				overflow:hidden; /* disable scrollbars */
+				-webkit-tap-highlight-color: rgba(0, 0, 0, 0); /* remove highlight on tab for iOS/Android */
+			}
+			/* fix for scroll bars on webkit & >=Mac OS X Lion */ 
+			::-webkit-scrollbar {
+				background-color: rgba(0,0,0,0.5);
+				width: 0.75em;
+			}
+			::-webkit-scrollbar-thumb {
+    			background-color:  rgba(255,255,255,0.5);
+			}
+			.start {
+				width: 100%;
+				background: #FF9B25;
+				border: none;
+				transition: .3s;
+			}
 
-		body {
-			height: 100%;
-			margin: 0px;
-			overflow: hidden;
-			/* disable scrollbars */
-			-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-			/* remove highlight on tab for iOS/Android */
-		}
+			.start:hover {
+				color: #FF9B25;
+				background: #fff;
+			}
+		</style>	
+	</head>
+	<body>
+<!-- - - - - - - 8<- - - - - - cut here - - - - - 8<- - - - - - - -->
+		<script type="text/javascript" src="pano2vr_player.js">
+		</script>
+		<script type="text/javascript" src="skin.js">
+		</script>
 
-		/* fix for scroll bars on webkit & >=Mac OS X Lion */
-		::-webkit-scrollbar {
-			background-color: rgba(0, 0, 0, 0.5);
-			width: 0.75em;
-		}
-
-		::-webkit-scrollbar-thumb {
-			background-color: rgba(255, 255, 255, 0.5);
-		}
-
-		.start {
-			width: 100%;
-			background: #FF9B25;
-			border: none;
-			transition: .3s;
-		}
-
-		.start:hover {
-			color: #FF9B25;
-			background: #fff;
-		}
-	</style>
-</head>
-
-<body>
-	<!-- - - - - - - 8<- - - - - - cut here - - - - - 8<- - - - - - - -->
-	<script type="text/javascript" src="pano2vr_player.js">
-	</script>
-	<script type="text/javascript" src="skin.js">
-	</script>
-	<link rel="stylesheet" href="external/css/style.css" />
-	<script src="https://maps.googleapis.com/maps/api/js?v=3&key="></script>
-	<script src="webxr/three.min.js"></script>
-	<script src="webxr/webxr-polyfill.min.js"></script>
-	<div id="container" style="width:100%;height:100%;overflow:hidden;">
+		<link rel="stylesheet" href="external/css/style.css"/>
+		<script src="https://maps.googleapis.com/maps/api/js?v=3&key="></script>
+		<script src="webxr/three.min.js"></script>
+		<script src="webxr/webxr-polyfill.min.js"></script>
+		<div id="container" style="width:100%;height:100%;overflow:hidden;">
 		<br>Loading...<br><br>
-	</div>
-	<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog"
+		</div>
+		<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog"
 		aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
 		<div class="modal-dialog modal-dialog-centered" role="document">
 			<div class="modal-content">
@@ -95,25 +89,26 @@
 			</div>
 		</div>
 	</div>
-	<script type="text/javascript">
-		// create the panorama player with the container
-		pano = new pano2vrPlayer("container");
-		// add the skin object
-		skin = new pano2vrSkin(pano);
-		// load the configuration
-
-		window.addEventListener("load", function () {
-			pano.readConfigUrlAsync("pano.xml");
-		});
-	</script>
-	<noscript>
-		<p><b>Please enable Javascript!</b></p>
-	</noscript>
-	<!-- - - - - - - 8<- - - - - - cut here - - - - - 8<- - - - - - - -->
-	<!-- Hack needed to hide the url bar on iOS 9, iPhone 5s -->
-	<div style="width:1px;height:1px;"></div>
-</body>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script type="text/javascript">
+	
+			// create the panorama player with the container
+			pano=new pano2vrPlayer("container");
+			// add the skin object
+			skin=new pano2vrSkin(pano);
+			// load the configuration
+		
+			window.addEventListener("load", function() {
+				pano.readConfigUrlAsync("pano.xml");
+			});
+		</script>
+		<noscript>
+			<p><b>Please enable Javascript!</b></p>
+		</noscript>
+<!-- - - - - - - 8<- - - - - - cut here - - - - - 8<- - - - - - - --> 
+		<!-- Hack needed to hide the url bar on iOS 9, iPhone 5s --> 
+		<div style="width:1px;height:1px;"></div>
+	</body>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script type="text/javascript">
 	$(window).on('load', function () {
 		setTimeout(function () {
@@ -126,5 +121,4 @@
 		});
 	});
 </script>
-
 </html>
